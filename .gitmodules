@@ -1,0 +1,6 @@
+[submodule "src/backend/automation_tools/python/Auto-GPT"]
+	path = src/backend/automation_tools/python/Auto-GPT
+	url = https://github.com/Significant-Gravitas/AutoGPT.git
+[submodule "src/backend/automation_tools/python/dev/Auto-GPT"]
+	path = src/backend/automation_tools/python/dev/Auto-GPT
+	url = https://github.com/Significant-Gravitas/AutoGPT.git

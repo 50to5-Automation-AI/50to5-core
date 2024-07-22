@@ -1,0 +1,41 @@
+name: Update Submodules
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          submodules: true # Initialize submodules
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch all tags for submodules
+        run: |
+          git submodule foreach 'git fetch --all --tags'
+
+      - name: Update submodules to latest release
+        run: |
+          git submodule foreach '
+            latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+            echo "Updating submodule $path to latest tag $latest_tag"
+            git checkout tags/$latest_tag
+          '
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update submodules to latest release"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

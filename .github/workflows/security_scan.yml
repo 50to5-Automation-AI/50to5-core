@@ -1,0 +1,25 @@
+name: Security Scan
+
+on: [push]
+
+jobs:
+  nikto-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+      - name: Install Nikto
+        run: sudo apt-get update && sudo apt-get install -y nikto
+      - name: Install Scapy
+        run: pip install scapy
+      - name: Run Nikto Scan
+        env:
+          NIKTO_TARGET: "http://example.com"
+          NIKTO_PORT: "80"
+          NIKTO_FORMAT: "html"
+          NIKTO_OUTPUT: "scan_results.html"
+          NIKTO_ADDITIONAL: "-ssl"
+        run: python nikto_scan.py

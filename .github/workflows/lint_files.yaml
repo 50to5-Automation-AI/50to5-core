@@ -1,0 +1,42 @@
+name: Lint Code Base
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Run Prettier
+      run: |
+        npx prettier --check .
+      continue-on-error: true
+
+    - name: Run ESLint
+      run: |
+        npx eslint .
+      continue-on-error: true
+
+    - name: Archive Lint Results
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: lint-results
+        path: |
+          eslint.log
+          prettier.log

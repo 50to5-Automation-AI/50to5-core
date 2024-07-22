@@ -1,0 +1,10 @@
+{
+    "entryPoints": ["src/index.ts"],
+    "out": "docs",
+    "name": "50to5 Task Workflows",
+    "exclude": ["**/*.test.ts", "**/*.py", "**/node_modules/", "backend/automation_tools/python/"],
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "theme": "default",
+    "hideGenerator": true
+  }

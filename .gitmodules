@@ -10,5 +10,8 @@
 [submodule "/50to50-api"]
 	path = ./src/fifty-to-five/api
 	url = https://github.com/nestjs/nest.git
+[submodule "/50to50-api"]
+	path = ./src/fifty-to-five/api
+	url = https://github.com/nestjs/nest.git
 	
 	

@@ -1,6 +1,6 @@
-# Fifty-Five 🚀
+# Fifty-to-Five 🚀
 
-Welcome to **Fifty-Five**, an ambitious project aimed at empowering small teams to operate like industry giants through cutting-edge automation and AI. Our mission is to develop tools that transform a 5-person company into a powerhouse that can compete with companies 50 times their size or more.
+Welcome to **Fifty-to-Five**, an ambitious project aimed at empowering small teams to operate like industry giants through cutting-edge automation and AI. Our mission is to develop tools that transform a 5-person company into a powerhouse that can compete with companies 50 times their size or more.
 
 ## Mission 🌟
 
@@ -11,6 +11,13 @@ Welcome to **Fifty-Five**, an ambitious project aimed at empowering small teams 
 - **ClickUp**: For task management and project tracking.
 - **Zapier**: For automating workflows and integrating various apps.
 - **Custom Code**: Leveraging Large Language Models (LLMs) via llama-index and agent tools (TBC).
+
+## How We Use LLM's:
+Our workflows are orchestrated and distributed across teams through a state management service that initializes the environment and monitors performance. These metrics are collected to train an agent policy, reward, and action mechanism for Reinforcement Learning.
+
+LLMs are utilized to address the perennial problem of interdepartmental communication and provide future recommendations based on current and historical data. Data quality and consistency remain critical in all our projects.
+
+Today and tonight, we've been evaluating a finely tuned version of OpenAI's gpt-4o-mini. Training is ongoing using both traditional and evolving benchmarks. The performance of these models, which are orders of magnitude smaller than foundation models, is outstanding.
 
 ## Core Automatable Tasks 📝
 
@@ -61,6 +68,7 @@ Our system produces daily reports based on the activities of automated agents. T
 - Activity logs of automated agents.
 - Key performance indicators (KPIs) and metrics.
 - Upcoming deadlines and important milestones.
+- "Weak Labelling" through the use of LLM as judge for labelling through random sample of ```N as a member of set S being the size of our live dat a analysis``` 
 
 ## Unified API 🌐
 
@@ -69,7 +77,7 @@ To streamline integration and extend functionality, we provide a unified API:
 - **Standardized Endpoints**: Consistent API endpoints for various services.
 - **Authentication**: Secure API access using OAuth or API keys.
 - **Documentation**: Comprehensive API documentation for ease of use.
-
+`
 ## Getting Started 🚀
 
 1. **Clone the Repository**:
@@ -101,6 +109,10 @@ This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE
 
 ---
 
-Contributors are welcome. At the moment we are producing the core based on NestJS, and  🚀✨
+Contributors are welcome. At the moment we are producing the core based on NestJS. 🚀✨
 
 For more information, visit our [repository](https://github.com/snyata/fifty-five). Feel free to reach out with any questions or suggestions.
+
+Peace and love, world.
+
+**Snyata**

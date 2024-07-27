@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+      "campaign_id": { "type": "string" },
+      "title": { "type": "string" },
+      "description": { "type": "string" },
+      "deadline": { "type": "string", "format": "date-time" },
+      "status": { "type": "string" },
+      "team_member": { "type": "string" }
+    },
+    "required": ["campaign_id", "title", "description", "deadline", "status"]
+  }
+  

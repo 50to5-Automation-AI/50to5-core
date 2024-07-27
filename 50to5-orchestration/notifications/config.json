@@ -1,0 +1,17 @@
+{
+    "initialization_agent": {
+      ...
+    },
+    "quality_control_agent": {
+      ...
+    },
+    "sendgrid": {
+      "api_key": "YOUR_SENDGRID_API_KEY",
+      "from_email": "from@example.com",
+      "to_email": "to@example.com"
+    },
+    "slack": {
+      "webhook_url": "YOUR_SLACK_WEBHOOK_URL"
+    }
+  }
+  

@@ -1,6 +1,14 @@
 [submodule "src/backend/automation_tools/python/Auto-GPT"]
 	path = src/backend/automation_tools/python/Auto-GPT
 	url = https://github.com/Significant-Gravitas/AutoGPT.git
-[submodule "src/backend/automation_tools/python/dev/Auto-GPT"]
-	path = src/backend/automation_tools/python/dev/Auto-GPT
-	url = https://github.com/Significant-Gravitas/AutoGPT.git
+[submodule "src/backend/automation_tools/python/dev/baby_agi/babyagi"]
+	path = src/backend/automation_tools/python/dev/baby_agi/babyagi
+	url = https://github.com/yoheinakajima/babyagi.git
+[submodule "src/backend/automation_tools/python/portkey-python-sdk"]
+	path = src/backend/automation_tools/python/portkey-python-sdk
+	url = https://github.com/Portkey-AI/dev/portkey-python-sdk.git
+[submodule "/50to50-api"]
+	path = ./api
+	url = https://github.com/nestjs/nest.git
+	
+	

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cost-analysis"
+version = "0.1.0"
+description = "50to5 Analysis of Cloud Costs Aggregate"
+authors = ["orionhunts-ai <orion@oriondefensiveai.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

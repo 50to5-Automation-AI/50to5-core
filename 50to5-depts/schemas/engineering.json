@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+      "task_id": { "type": "string" },
+      "summary": { "type": "string" },
+      "details": { "type": "string" },
+      "priority": { "type": "integer" },
+      "status": { "type": "string" },
+      "assignee": { "type": "string" }
+    },
+    "required": ["task_id", "summary", "details", "priority", "status"]
+  }
+  

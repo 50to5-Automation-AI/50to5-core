@@ -1,12 +1,13 @@
 interface EmbeddingModel {
-    name: string;
-    key?: string;
-    model: string;
-    dim: number;
-    usage: string;
-  }
-  
-  const embedding_models: EmbeddingModel[] = [
+  name: string;
+  key?: string;
+  model: string;
+  dim: number;
+  usage: string;
+}
+
+export default function embedding_models(name: string): EmbeddingModel[] {
+  const embeddings_list: EmbeddingModel[] = [
     {
       name: "OpenAI",
       key: process.env.OPENAI_API_KEY,
@@ -39,4 +40,6 @@ interface EmbeddingModel {
       usage: "Compact and efficient text embeddings suitable for NLP tasks."
     }
   ];
-  
+
+  return embeddings_list;
+}

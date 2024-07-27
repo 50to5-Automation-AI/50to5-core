@@ -19,11 +19,12 @@ import dotenv from 'dotenv';
 dotenv.config({path='../../db.env'});
 
 //Main?
-function set_embeddings(embeddings:Object) {
-    Settings.embedModel = new OpenAIEmbedding({
-        model: "text-embedding-ada-002",
-      });
-}
+export async function(name: string) {
+    function set_embeddings(name: string) {
+        Settings.embedModel = new OpenAIEmbedding({
+            model: "text-embedding-ada-002",
+        });
+    }
 
 // MistralAI Embedding
 export async function mistral_embeddings(data: JSON) {

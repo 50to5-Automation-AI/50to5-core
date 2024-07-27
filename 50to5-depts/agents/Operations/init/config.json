@@ -1,0 +1,36 @@
+{
+    "db_config": {
+        "host": "localhost",
+        "database": "agent_system",
+        "user": "user",
+        "password": "password"
+    },
+    "redis_config": {
+        "host": "localhost",
+        "port": 6379,
+        "db": 0
+    },
+    "agents": [
+        {
+            "type": "DecisionAgent",
+            "name": "DecisionMaker",
+            "system_message": "You are the decision-making agent.",
+            "meeting_time": "09:00"
+        },
+        {
+            "type": "TaskGenerator",
+            "name": "TaskGen",
+            "description": "Generates tasks for the team."
+        },
+        {
+            "type": "DiscriminatorAgent",
+            "name": "Discriminator",
+            "system_message": "Ask hard questions to improve tasks."
+        },
+        {
+            "type": "InitializationAgent",
+            "name": "Initializer",
+            "system_message": "Initialize the environment and manage state."
+        }
+    ]
+}

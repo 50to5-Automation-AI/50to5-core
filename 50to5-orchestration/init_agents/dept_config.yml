@@ -1,0 +1,42 @@
+# department_config.yaml
+
+departments:
+  - name: "EngineeringAgent"
+    description: "Handles all engineering-related tasks and communications."
+    db_config:
+      dbname: "engineering_db"
+      user: "engineer"
+      password: "password"
+      host: "localhost"
+      port: 5432
+    roles:
+      - "Developer"
+      - "System Architect"
+    tasks:
+      - "Develop software features"
+      - "Fix bugs"
+      - "Architect system design"
+    metrics:
+      - "code_quality"
+      - "task_completion_rate"
+      - "bug_fix_rate"
+
+  - name: "MarketingAgent"
+    description: "Handles all marketing-related tasks and communications."
+    db_config:
+      dbname: "marketing_db"
+      user: "marketer"
+      password: "password"
+      host: "localhost"
+      port: 5432
+    roles:
+      - "Content Creator"
+      - "SEO Specialist"
+    tasks:
+      - "Create marketing content"
+      - "Optimize SEO"
+      - "Run marketing campaigns"
+    metrics:
+      - "content_engagement"
+      - "lead_generation"
+      - "campaign_success_rate"

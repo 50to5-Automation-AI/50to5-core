@@ -5,6 +5,9 @@
 */
 
 import dotenv from 'dotenv';
+import { } from 'embeddings';
+import { } from 'models';
+import { } from 'qdrant_async';
 
 dotenv.config({path: 'db.env'});
 

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "50to50-utils"
+version = "0.1.0"
+description = "Utils for the 50to50 project"
+authors = ["snyata <core@synavate.tech>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "black"
+black = "^24.4.2"
+flake8 = "^7.1.0"
+isort = "^5.13.2"
+pip-tools = "^7.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

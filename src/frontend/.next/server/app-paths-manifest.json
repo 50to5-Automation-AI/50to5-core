@@ -1,0 +1,5 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/opengraph-image.png/route": "app/opengraph-image.png/route.js",
+  "/twitter-image.png/route": "app/twitter-image.png/route.js"
+}

@@ -1,5 +1,11 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.5"
-  }
+  "name": "50to5-automation",
+  "version": "1.0.0",
+  "description": "Improving software workflows by 10x",
+  "main": "index.js",
+  "repository": "https://github.com/50to5-Automation-AI/50to5-core.git",
+  "author": "50to5 <edge@50to5.tech>",
+  "license": "Apache-2.0",
+  "workspaces": ["50to5-frontend", 
+                 "backend"]
 }

@@ -8,7 +8,7 @@
 	path = src/backend/automation_tools/python/portkey-python-sdk
 	url = https://github.com/Portkey-AI/dev/portkey-python-sdk.git
 [submodule "/50to50-api"]
-	path = ./api
+	path = ./src/fifty-to-five/api
 	url = https://github.com/nestjs/nest.git
 	
 	

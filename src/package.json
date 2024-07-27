@@ -1,5 +1,5 @@
 {
-  "name": "50to5-core",
+  "name": "50to5-frontend",
   "version": "1.0.0",
   "description": "A set of task automation using ClickUp, Zapier and custom code to streamline personal and business operations",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "workspaces": [
     "src/frontend",
     "src/backend/automation_tools/typescript",
-    "src/api",
+    "../src/api",
     "src/backend",
     "src/backend/automation_tools/typescript/tools/packages/"
   ],
@@ -19,7 +19,6 @@
     "@types/node": "^20.14.11",
     "50to5-api": "./api/",
     "50to5-ts": "./backend/automation_tools/typescript/",
-    "50to5-automation": "./backend/automation_tools/",
     "pnpm": "^9.5.0",
     "qwik-create": "^1.7.1",
     "dotenv": "^16.4.5",

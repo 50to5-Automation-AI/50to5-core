@@ -6,5 +6,7 @@ node_modules/
 **/yarn.lock
 .gitignore
 .dockerignore
+.DS_Store
+../../../../../src/f/50-to-5-chatbot
 
 
